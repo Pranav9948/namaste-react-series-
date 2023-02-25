@@ -1,0 +1,53 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste React</title>
+</head>
+<body>
+
+    <div id="root">
+
+
+    </div>
+
+
+    <div id="newHead">
+
+        <h1>man</h1>
+        <h2>hell</h2>
+
+
+    </div>
+
+    
+</body>
+
+
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+
+  <script>
+
+    //Dom manipulation using React//
+
+
+    const heading1=React.createElement("h1",{},"man")
+  const heading2=React.createElement("h2",{},"hell")
+ 
+
+  const newDiv=React.createElement("div",{id:"newHead"},[h1,h2])
+
+  const root=React.createRoot(document.getElementById("root"))
+
+  root.render(newDiv)
+  
+
+  </script>
+    
+</html>
